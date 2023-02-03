@@ -542,7 +542,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  max-width: 551px;
+  max-width: 100%;
   line-height: 20px;
   text-align: right;
   color: white;
@@ -614,8 +614,9 @@
   padding: 42px 54px;
   background: #334D94;
   max-width: 624px;
-  height: 230px;
+  height: 100%;
   display: flex;
+  justify-content: center;
   border-radius: 8px;
   gap: 24px;
   flex-direction: column;
@@ -658,7 +659,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  width: 516px;
+  width: 100%;
   color: white;
 }
 
@@ -1370,7 +1371,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width: 450px;
+    width: 100%;
     color: white;
   }
   .footer {
@@ -2075,7 +2076,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width: 450px;
+    width: 100%;
     color: white;
   }
   .footer {
@@ -2784,7 +2785,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 19px;
-    width: 400px;
+    width: 100%;
     color: white;
   }
   .footer {
@@ -3516,7 +3517,7 @@
     font-weight: 400;
     font-size: 9px;
     line-height: 19px;
-    width: 240px;
+    width: 100%;
     color: white;
   }
   .footer {
