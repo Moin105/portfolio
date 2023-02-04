@@ -13,6 +13,7 @@ const useWindowSize = () => {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
+        scrollY: window.scrollY
       });
     }
     

@@ -1,3 +1,9 @@
+@-webkit-keyframes autofill {
+  0%,100% {
+      color: #666;
+      background: transparent;
+  }
+}
 .container {
   width: calc(100% - 130px);
   margin: 0 auto;
@@ -66,7 +72,29 @@ height: 60px;
   // top: 0;
 
 }
-
+.footes {
+  border-top: none;
+  display: flex;
+  // height: 42px;
+  position: fixed;
+  justify-content: flex-start;
+  left: 15px;
+  bottom: 0;
+  flex-direction: column;
+  .boxer {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 32px;
+    color: #F68D1E;
+    // flex-direction: column;
+    .line {
+      width: 1px;
+      height: 99px;
+      background: white;
+    }
+  }
+}
 .contain {
   display: flex;
   flex-direction: column;
@@ -77,6 +105,7 @@ height: 60px;
   position: absolute;
   top: 0;
   gap: 32px;
+
 
   .out {
     width: 180px;
@@ -601,6 +630,7 @@ color: rgb(235, 235, 235);
         margin: 10px 0px 0px 0px;
         background: #334D94;
         border-radius: 8px;
+        max-width: 551px;
         padding: 27px 33px;
       }
 
@@ -766,8 +796,36 @@ color: rgb(235, 235, 235);
   max-width: 1440px;
   overflow: overlay;
   width: 100%;
-  margin: 70 auto;
+  margin: 70px auto;
+  input[type="text"], textarea {
 
+    background-color : #0A2263 !important; 
+    background : #0A2263 !important; 
+    input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #0A2263  !important;
+}
+  
+}
+  input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+  input[type="text"] {
+
+    background-color : #0A2263 !important; 
+    background : #0A2263 !important; 
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px #0A2263  !important;
+      }
+  }
+  
   .containor {
     display: flex;
     flex-direction: column;
@@ -776,6 +834,7 @@ color: rgb(235, 235, 235);
     gap: 40px;
 
     .h2 {
+ 
       font-family: 'Century Gothic';
       font-style: normal;
       font-weight: 600;
@@ -792,7 +851,114 @@ color: rgb(235, 235, 235);
       line-height: 38px;
       text-align: center;
     }
-
+    .contacts{
+      display: none;
+    }
+    .contact {
+      width: 100%;
+      background-color: transparent;
+      position: relative;
+      margin: 20px 0px 40px 0px;
+      padding: 0px 18px;
+    
+      .waves {
+        width: 558px;
+        height: 558px;
+        position: relative;
+      }
+      .contact_us {
+        // position: absolute;
+        // top: 76px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 570px;
+        // left: 85px;
+        h3 {
+          font-family: 'Century Gothic';
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 58.51px;
+          padding: 0px 0px 10px 0px;
+        }
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          font-family: 'Century Gothic';
+          padding: 0px 0px 30px 0px;
+          line-height: 34.13px;
+        }
+      }
+    }
+    .contl {
+      border-bottom: 1px solid  #1EEBB8;
+      width: 100%;
+    }
+    .contact_cell {
+      position: absolute;
+      right: 0;
+      top: -170px;
+      width: 571px;
+      height: 741px;
+    }
+    .form {
+      .row {
+        display: flex;
+        gap: 20px;
+      }
+      input {
+        border: none;
+        outline: none;
+        font-family: "Century Gothic";
+        padding: 20px 10px 20px 40px;
+        font-size: 18px;
+        width: 50%;
+        color: #1EEBB8;
+        font-weight: 500;
+        line-height: 21.94px;
+        border: 1px solid #1EEBB8;
+        border-radius: 20px;
+        margin-bottom: 30px;
+      }
+      .message {
+        width: 100%;
+        max-width: 100%;
+        height: 119px;
+        color: #1EEBB8;
+        padding: 20px 10px 20px 40px;
+        word-wrap: break-word;
+        border: 1px solid  #1EEBB8;
+        word-break: break-all;
+        // border: none;
+        outline: none;
+        font-family: "Century Gothic";
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.94px;
+        margin-bottom: 30px;
+      }
+    }
+    .formtbtn {
+      margin: 0 auto;
+      font-weight: 600;
+      background-color: transparent;
+      border: 1px solid #1EEBB8;
+      color: #1EEBB8;
+      height: 110px;
+      width: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      padding: 18px 3px 17px 3px;
+      font-family: "Century Gothic";
+      font-size: 18px;
+      line-height: 21.94px;
+      // border: none;
+      border-radius: 770px;
+    }
     .out {
       width: 180px;
       height: 180px;
@@ -832,7 +998,8 @@ color: rgb(235, 235, 235);
   display: flex;
   height: 42px;
   justify-content: flex-start;
-
+  max-width: 1920px;
+  margin: 0 auto;
   .boxer {
     display: flex;
     align-items: center;
@@ -1578,7 +1745,7 @@ color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     padding: 150px 0px;
     justify-content: center;
     color: white;
@@ -1593,7 +1760,111 @@ color: rgb(235, 235, 235);
       align-items: center;
       justify-content: center;
       gap: 40px;
-  
+      .contact {
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        margin: 20px 0px 40px 0px;
+        padding: 0px 18px;
+      
+        .waves {
+          width: 558px;
+          height: 558px;
+          position: relative;
+        }
+        .contact_us {
+          // position: absolute;
+          // top: 76px;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          width: 570px;
+          // left: 85px;
+          h3 {
+            font-family: 'Century Gothic';
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58.51px;
+            padding: 0px 0px 10px 0px;
+          }
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Century Gothic';
+            padding: 0px 0px 30px 0px;
+            line-height: 34.13px;
+          }
+        }
+      }
+      .contl {
+        border-bottom: 1px solid  #1EEBB8;
+        width: 100%;
+      }
+      .contact_cell {
+        position: absolute;
+        right: 0;
+        top: -170px;
+        width: 571px;
+        height: 741px;
+      }
+      .form {
+        .row {
+          display: flex;
+          gap: 20px;
+        }
+        input {
+          border: none;
+          outline: none;
+          font-family: "Century Gothic";
+          padding: 20px 10px 20px 40px;
+          font-size: 18px;
+          width: 50%;
+          color: #1EEBB8;
+          font-weight: 500;
+          line-height: 21.94px;
+          border: 1px solid #1EEBB8;
+          border-radius: 20px;
+          margin-bottom: 30px;
+        }
+        .message {
+          width: 100%;
+          max-width: 100%;
+          height: 119px;
+          color: #1EEBB8;
+          padding: 20px 10px 20px 40px;
+          word-wrap: break-word;
+          border: 1px solid  #1EEBB8;
+          word-break: break-all;
+          // border: none;
+          outline: none;
+          font-family: "Century Gothic";
+          border-radius: 20px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21.94px;
+          margin-bottom: 30px;
+        }
+      }
+      .formtbtn {
+        margin: 0 auto;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1px solid #1EEBB8;
+        color: #1EEBB8;
+        height: 110px;
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        padding: 18px 3px 17px 3px;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        line-height: 21.94px;
+        // border: none;
+        border-radius: 770px;
+      }
       .h2 {
         font-family: 'Century Gothic';
         font-style: normal;
@@ -2404,7 +2675,111 @@ color: rgb(235, 235, 235);
       align-items: center;
       justify-content: center;
       gap: 40px;
-  
+      .contact {
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        margin: 0px 0px 40px 0px;
+        padding: 0px 18px;
+      
+        .waves {
+          width: 558px;
+          height: 558px;
+          position: relative;
+        }
+        .contact_us {
+          // position: absolute;
+          // top: 76px;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin: -50px auto;
+          width: 570px;
+          // left: 85px;
+          h3 {
+            font-family: 'Century Gothic';
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 38.51px;
+            padding: 10px 0px 10px 0px;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Century Gothic';
+            padding: 0px 0px 30px 0px;
+            line-height: 24.13px;
+          }
+        }
+      }
+      .contl {
+        border-bottom: 1px solid  #1EEBB8;
+        width: 100%;
+      }
+      .contact_cell {
+        position: absolute;
+        right: 0;
+        top: -170px;
+        width: 571px;
+        height: 741px;
+      }
+      .form {
+        .row {
+          display: flex;
+          gap: 20px;
+        }
+        input {
+          border: none;
+          outline: none;
+          font-family: "Century Gothic";
+          padding: 20px 10px 20px 40px;
+          font-size: 18px;
+          width: 50%;
+          color: #1EEBB8;
+          font-weight: 500;
+          line-height: 21.94px;
+          border: 1px solid #1EEBB8;
+          border-radius: 20px;
+          margin-bottom: 30px;
+        }
+        .message {
+          width: 100%;
+          max-width: 100%;
+          height: 119px;
+          color: #1EEBB8;
+          padding: 20px 10px 20px 40px;
+          word-wrap: break-word;
+          border: 1px solid  #1EEBB8;
+          word-break: break-all;
+          // border: none;
+          outline: none;
+          font-family: "Century Gothic";
+          border-radius: 20px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21.94px;
+          margin-bottom: 30px;
+        }
+      }
+      .formtbtn {
+        margin: 0 auto;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1px solid #1EEBB8;
+        color: #1EEBB8;
+        height: 110px;
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        padding: 18px 3px 17px 3px;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        line-height: 21.94px;
+        // border: none;
+        border-radius: 770px;
+      }
       .h2 {
         font-family: 'Century Gothic';
         font-style: normal;
@@ -3208,7 +3583,7 @@ color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     color: white;
     max-width: 1440px;
@@ -3222,7 +3597,113 @@ color: rgb(235, 235, 235);
       align-items: center;
       justify-content: center;
       gap: 15px;
-  
+      .contact {
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        margin: 0px 0px 40px 0px;
+        padding: 0px 18px;
+      
+        .waves {
+          width: 558px;
+          height: 558px;
+          position: relative;
+        }
+        .contact_us {
+          // position: absolute;
+          // top: 76px;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          width: 570px;
+          // left: 85px;
+          h3 {
+            font-family: 'Century Gothic';
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 18.51px;
+            padding: 0px 0px 10px 0px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Century Gothic';
+            padding: 0px 0px 30px 0px;
+            line-height: 24.13px;
+          }
+        }
+      }
+      .contl {
+        border-bottom: 1px solid  #1EEBB8;
+        width: 100%;
+      }
+      .contact_cell {
+        position: absolute;
+        right: 0;
+        top: -170px;
+        width: 571px;
+        height: 741px;
+      }
+      .form {
+        .row {
+          display: flex;
+          gap: 20px;
+        }
+        input {
+          border: none;
+          outline: none;
+          font-family: "Century Gothic";
+         
+    font-family: "Century Gothic";
+    padding: 10px 10px 10px 23px;
+    font-size: 14px;
+          width: 50%;
+          color: #1EEBB8;
+          font-weight: 500;
+          line-height: 21.94px;
+          border: 1px solid #1EEBB8;
+          border-radius: 20px;
+          margin-bottom: 30px;
+        }
+        .message {
+          width: 100%;
+          max-width: 100%;
+          height: 119px;
+          color: #1EEBB8;
+          padding: 10px 10px 10px 23px;
+          word-wrap: break-word;
+          border: 1px solid  #1EEBB8;
+          word-break: break-all;
+          // border: none;
+          outline: none;
+          font-family: "Century Gothic";
+          border-radius: 20px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21.94px;
+          margin-bottom: 30px;
+        }
+      }
+      .formtbtn {
+        margin: 0 auto;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1px solid #1EEBB8;
+        color: #1EEBB8;
+        height: 110px;
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        padding: 18px 3px 17px 3px;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        line-height: 21.94px;
+        // border: none;
+        border-radius: 770px;
+      }
       .h2 {
         font-family: 'Century Gothic';
         font-style: normal;
@@ -3303,7 +3784,9 @@ color: rgb(235, 235, 235);
     margin: 0 auto;
     max-width: 1440px;
   }
-  
+  .footes {
+  display: none !important;
+  }
   .header {
     margin: 0 auto;
     display: flex;
@@ -4052,9 +4535,115 @@ height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 360px;
-    height: 100vh;
+    height: 100%;
+    // max-height: 400px;
+    // height: 100vh;
+    .contact {
+      width: 100%;
+      background-color: transparent;
+      position: relative;
+      margin: 20px 0px 40px 0px;
+      padding: 0px 18px;
     
+      .waves {
+        width: 558px;
+        height: 558px;
+        position: relative;
+      }
+      .contact_us {
+        // position: absolute;
+        // top: 76px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100% !important;
+        // left: 85px;
+        h3 {
+          font-family: 'Century Gothic';
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 58.51px;
+          padding: 0px 0px 10px 0px;
+        }
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          font-family: 'Century Gothic';
+          padding: 0px 0px 30px 0px;
+          line-height: 34.13px;
+        }
+      }
+    }
+    .contl {
+      border-bottom: 1px solid  #1EEBB8;
+      width: 100%;
+    }
+    .contact_cell {
+      position: absolute;
+      right: 0;
+      top: -170px;
+      width: 571px;
+      height: 741px;
+    }
+    .form {
+      .row {
+        display: flex;
+        gap: 0px;
+        flex-direction: column !important;
+      }
+      input {
+        border: none;
+        outline: none;
+        font-family: "Century Gothic";
+        padding: 20px 10px 20px 40px;
+        font-size: 12px;
+        width: 100% !important;
+        color: #1EEBB8;
+        font-weight: 500;
+        line-height: 21.94px;
+        border: 1px solid #1EEBB8;
+        border-radius: 20px;
+        margin-bottom: 10px !important;
+      }
+      .message {
+        width: 100%;
+        max-width: 100%;
+        height: 119px;
+        color: #1EEBB8;
+        padding: 20px 10px 20px 40px;
+        word-wrap: break-word;
+        border: 1px solid  #1EEBB8;
+        word-break: break-all;
+        // border: none;
+        outline: none;
+        font-family: "Century Gothic";
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 21.94px;
+        margin-bottom: 20px !important;
+      }
+    }
+    .formtbtn {
+      margin: 0 auto;
+      font-weight: 600;
+      background-color: transparent;
+      border: 1px solid #1EEBB8;
+      color: #1EEBB8;
+      height: 60px !important;
+      width: 60px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      padding: 18px 3px 17px 3px;
+      font-family: "Century Gothic";
+      font-size: 12px !important;
+      line-height: 21.94px;
+      // border: none;
+      border-radius: 770px;
+    }
     justify-content: center;
     color: white;
     max-width: 1440px;
