@@ -71,7 +71,7 @@ function Feedback() {
       }
       ] 
   return (
-    <div className={styles.feedback}>
+    <div className={styles.feedback} id="about">
         
         <h2 className={styles.h2s}><span className={styles.span}>04.</span>What people are saying about me?</h2>
 

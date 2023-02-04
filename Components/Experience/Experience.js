@@ -26,7 +26,7 @@ function Experience() {
     "Roles":["React.js Development","iOS Development using Auto layout & storyboards"]}
     ]
   return (
-    <div className={styles.experience}>
+    <div className={styles.experience} id="experience">
       <div className={styles.first}>
         <h2 className={styles.h2}>
           <span className={styles.span}>02.</span>

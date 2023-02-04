@@ -84,7 +84,7 @@ function Footer() {
     }
   };
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id="contact">
           <div className={styles.containor}>
                <h2 className={styles.h2}>Don’t be a stranger!</h2>
             {!show &&  <> <p className={styles.p}>Available for select freelance opportunities<br></br>

@@ -108,7 +108,7 @@ function Project() {
       ]
   return (
     <>
-        <div className={styles.project}>
+        <div className={styles.project} id="portfolio">
              <div className={styles.first}>
                   <h2 className={styles.h2}>
                      <span className={styles.span}>03.</span>

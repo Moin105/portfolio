@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/Home.module.css'
 import NavButton from '../Buttons/NavButton'
+import Link from 'next/link'
 import obs from '../../public/obs.png'
 function Header() {
   return (
@@ -16,10 +17,10 @@ function Header() {
          </figure>
 
          <ul>
-         <NavButton name="about" />
-         <NavButton name="experience" />
-         <NavButton name="portfolio" />
-         <NavButton name="contact" />
+         <Link href="/#about"><NavButton name="about" /></Link>
+         <Link href="/#experience"><NavButton name="experience" /></Link> 
+         <Link href="/#portfolio"><NavButton name="portfolio" /></Link>
+         <Link href="/#contact"><NavButton name="contact" /></Link>
          <NavButton name="resume"  />
 
          </ul>
