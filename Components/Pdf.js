@@ -72,7 +72,7 @@ export default function Pdf() {
   return (
     <>
       <div className="main">
-        <div className={styles.pdf} ref={viewer} style={{height:"100vh"}}></div>
+        <div className={styles.pdf} ref={viewer} style={{height:"100vh",margin:"40px 0px 0px 0px"}}></div>
       {/* <FileViewer
         fileType={type}
         filePath={file}
