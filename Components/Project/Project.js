@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/Home.module.css'
 import p1 from '../../public/p1.png'
