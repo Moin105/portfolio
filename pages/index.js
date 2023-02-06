@@ -18,7 +18,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   // const containerRef = useRef(null);
-  const [show, setShow] = useState(false)
+  // const [show, setShow] = useState(false)
 	// useEffect(() => {
 	// 	const container = containerRef.current;
 	// 	let PSPDFKit;

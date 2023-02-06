@@ -3,11 +3,11 @@ import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css'
 import Head from 'next/head';
 import Header from '../Components/Header/Header';
-import Pdf from '../Components/Pdf';
+// import Pdf from '../Components/Pdf';
 import dynamic from 'next/dynamic';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-
-const Pdfs = dynamic(()=>import('../Components/Pdf') , {ssr: false})
+// 
+const Pdf = dynamic(()=>import('../Components/Pdf') , {ssr: false})
 // const WebViewer = dynamic(() => import('@pdftron/webviewer'), {ssr: false});
 function Resume() {
     // const viewer = useRef(null)
@@ -37,7 +37,7 @@ function Resume() {
     //     });}
     //     console.log("salam",viewer.current)
     // }, [viewer.current])
-  return ( window ?
+  return ( typeof window ?
     <>
      <div className={styles.container}>
       <Head>
@@ -48,7 +48,7 @@ function Resume() {
       <Header/>
       {/* <div className={styles.pdf} ref={viewer} style={{height:"100vh"}}></div> */}
 
-    <Pdfs/>
+    <Pdf/>
     </div>
   </>:    <div className={styles.container}>
       <Head>
@@ -59,7 +59,7 @@ function Resume() {
       <Header/>
       {/* <div className={styles.pdf} ref={viewer} style={{height:"100vh"}}></div> */}
 
-    <Pdfs/>
+    {/* <Pdfs/> */}
     </div>) 
   
 }

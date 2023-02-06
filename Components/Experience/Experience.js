@@ -49,8 +49,8 @@ function Experience() {
             <h2 className={styles.h2}>CTO @ <span> {experience[tab -1 ]?.Company}</span></h2>
             <span className={styles.span}>{experience[tab - 1]?.Time}</span>
             <ul>
-               {experience[tab-1]?.Roles?.map(role=>{
-               return   <li>{role}</li>
+               {experience[tab-1]?.Roles?.map((role,index)=>{
+               return   <li key={index}>{role}</li>
                })}
             </ul>
           </div>
