@@ -45,6 +45,7 @@ function Osama() {
   return (
     <> 
        <div className={styles.contain}>
+        {/* <Pdf/> */}
           <h1 className={styles.h1}>I&apos;m <br></br>Osama Bin Shiraz.</h1>
           <p className={styles.p}>I am a web and mobile app developer that is enthusiastic about creating 
 digital products that allow people to enjoy daily life rather than have to put up

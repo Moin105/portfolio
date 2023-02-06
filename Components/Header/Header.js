@@ -21,7 +21,7 @@ function Header() {
          <Link href="/#experience"><NavButton name="experience" /></Link> 
          <Link href="/#portfolio"><NavButton name="portfolio" /></Link>
          <Link href="/#contact"><NavButton name="contact" /></Link>
-         <NavButton name="resume"  />
+         <Link href="/Resume"><NavButton name="resume"   /></Link>
 
          </ul>
     </div>
