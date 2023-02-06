@@ -2,12 +2,12 @@ import React, { Component, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 // import Testimonials from "./testimonials";
-import Image from "next/image";
-import styles from '../../styles/Home.module.css'
+// import Image from "next/image";
+// import styles from '../../styles/Home.module.css'
 import Card from "./Card";
 // import next from "../public/next.png";
 // import prev from "../public/prev.png";
-import p1 from '../../public/p1.png'
+// import p1 from '../../public/p1.png'
 
 export default class NextJsCarousel extends Component {
   //  constructor(props){super(
