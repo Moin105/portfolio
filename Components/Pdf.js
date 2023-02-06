@@ -41,20 +41,35 @@ import styles from '../styles/Home.module.css'
 //PDFjs worker from an external cdn
 // const url =
 //   "https://cors-anywhere.herokuapp.com/https://www2.ed.gov/parents/schools/find/choose/choosing.pdf";
-
+  const sada = dynamic(()=> import('@pdftron/webviewer'), {ssr: false})
 export default function Pdf() {
   const viewer = useRef(null)
-  useEffect(() => {
-    import('@pdftron/webviewer').then(()=>{
-      WebViewer(
-        {
-          path:'/lib',
-          initialDoc:'/pdf.pdf'
-        },
-        viewer.current,
-      ).then((instance)=>{
-          const {docViewer} = instance
-      })
+   useEffect(() => {
+  //  sada.then(()=>{
+  //     WebViewer(
+  //       {
+  //         path:'/lib',
+  //         initialDoc:'/pdf.pdf'
+  //       },
+  //       viewer.current,
+  //     ).then((instance)=>{
+  //         const {docViewer} = instance
+  //     })
+  //   })
+
+      // import('@pdftron/webviewer')
+      //  .then(WebViewer) => {
+      //     WebViewer({
+      //       path: "/lib",
+      //       initialDoc: "/pdf/GustavoMorilla.pdf"
+      //     }, viewer.current);
+      // }) 
+
+    window &&  sada.then(WebViewer=>{
+      WebViewer({
+        path:'/lib',
+        initialDoc:'/pdf.pdf'
+      },viewer.current)
     })
   }, [])
   

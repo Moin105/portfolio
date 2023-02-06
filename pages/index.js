@@ -8,13 +8,13 @@ import Feedback from '../Components/Feedback/Feedback'
 import Footer from '../Components/Footer/Footer'
 import Foots from '../Components/Footer/foots'
 import Header from '../Components/Header/Header'
-import Banner from '../Components/Landing/Banner'
+// import Banner from '../Components/Landing/Banner'
 import Landing from '../Components/Landing/Landing'
-import Osama from '../Components/Landing/Osama'
-import Pddf from '../Components/Pdf'
+// import Osama from '../Components/Landing/Osama'
+// import Pddf from '../Components/Pdf'
 import Project from '../Components/Project/Project'
 import styles from '../styles/Home.module.css'
-import Resume from './Resume'
+// import Resume from './Resume'
 
 export default function Home() {
   // const containerRef = useRef(null);
