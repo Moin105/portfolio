@@ -13,6 +13,7 @@
     "@pdftron/webviewer": "^8.11.0",
     "@splidejs/react-splide": "^0.7.12",
     "babel-preset-es2015": "^6.24.1",
+    "core-js": "^3.27.2",
     "emailjs": "^4.0.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
