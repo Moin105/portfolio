@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Header from '../Components/Header/Header';
 // import Pdf from '../Components/Pdf';
 import dynamic from 'next/dynamic';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { Splide, SplideSlide } from '@splidejs/react-splide';
 // 
 const Pdf = dynamic(()=>import('../Components/Pdf') , {ssr: false})
 // const WebViewer = dynamic(() => import('@pdftron/webviewer'), {ssr: false});

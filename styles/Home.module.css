@@ -26,6 +26,9 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
+.header .ham {
+  display: none;
+}
 .header .logo {
   width: 50px;
   cursor: pointer;
@@ -96,6 +99,9 @@
   position: absolute;
   top: 0;
   gap: 32px;
+}
+.contain .navbtn {
+  display: none;
 }
 .contain .out {
   width: 180px;
@@ -2523,7 +2529,7 @@
     height: 45px;
     justify-content: space-between;
     width: 100%;
-    position: relative;
+    position: fixed;
     z-index: 111;
     padding: 23px 15px 23px 15px;
     max-width: 1440px;
@@ -3318,6 +3324,103 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .mobilenav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: black;
+    height: 100%;
+    top: 0;
+    z-index: 11111111111111;
+    color: white;
+  }
+  .mobilenav .mobileback {
+    height: 100%;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .mobilenav .mobileback div {
+    margin: 270px 0px 0px 40px;
+  }
+  .mobilenav .mobileback div figure {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .mobilenav .mobilebar {
+    display: flex;
+    width: calc(100% - 42px);
+    flex-direction: column;
+  }
+  .mobilenav .mobilebar figure {
+    position: relative;
+    margin: 36px 0px 32px 46px;
+  }
+  .mobilenav .mobilebar .uppernav {
+    padding: 33px 0px 0px 46px;
+    border-top: 0.5px solid #ffffff;
+    list-style-type: none;
+  }
+  .mobilenav .mobilebar .uppernav li {
+    padding-bottom: 33px;
+  }
+  .mobilenav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #0A2263;
+    height: 100%;
+    top: 0;
+    z-index: 11111111111111;
+    color: white;
+  }
+  .mobilenav .mobileback {
+    height: 100%;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .mobilenav .mobileback div {
+    margin: 270px 0px 0px 40px;
+  }
+  .mobilenav .mobileback div figure {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    color: #1EEBB8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    background: #0A2263;
+  }
+  .mobilenav .mobilebar {
+    display: flex;
+    width: calc(100% - 42px);
+    flex-direction: column;
+  }
+  .mobilenav .mobilebar figure {
+    position: relative;
+    margin: 36px 0px 32px 46px;
+    width: 215px;
+    height: 25px;
+  }
+  .mobilenav .mobilebar .uppernav {
+    padding: 33px 0px 0px 46px;
+    border-top: 0.5px solid #ffffff;
+    list-style-type: none;
+  }
+  .mobilenav .mobilebar .uppernav li {
+    padding-bottom: 33px;
+    font-family: "Century Gothic";
+    color: #1EEBB8;
+  }
   .container {
     width: calc(100% - 30px);
     margin: 0 auto;
@@ -3329,14 +3432,19 @@
   .header {
     margin: 0 auto;
     display: flex;
-    height: 45px;
+    height: 60px;
     justify-content: space-between;
     width: 100%;
-    position: relative;
+    position: fixed;
     z-index: 111;
-    padding: 35px 0px 0px 0px;
-    max-width: 1440px;
+    padding: 35px 20px 30px 20px;
+    max-width: 800px;
     align-items: center;
+  }
+  .header .ham {
+    display: block !important;
+    font-size: 24px;
+    color: #1EEBB8;
   }
   .header .logo {
     width: 50px;
@@ -3384,7 +3492,22 @@
     top: 0;
     gap: 14px;
   }
+  .contain .navbtn {
+    background: rgba(30, 235, 184, 0.2);
+    border-radius: 6px;
+    width: 172px;
+    border: 1px solid #1EEBB8;
+    padding: 0px;
+    color: #1EEBB8;
+    height: 41px;
+    font-size: 14px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: "Century Gothic";
+  }
   .contain .out {
+    display: none !important;
     width: 90px;
     height: 90px;
     display: flex;
@@ -3447,6 +3570,7 @@
   }
   .experties {
     display: flex;
+    padding: 24px 0px;
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
@@ -3557,6 +3681,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
+    padding: 24px 0px;
     justify-content: center;
     color: white;
     max-width: 1240px;
@@ -3698,6 +3823,7 @@
     align-items: flex-start;
     height: 100%;
     justify-content: center;
+    padding: 24px 0px;
     color: white;
     max-width: 1240px;
     width: 100%;

@@ -39,8 +39,7 @@ function Footer() {
       //   setShow(false);
       // }, 5000);
       return;
-    } 
-    if(!inputs.email.match(validRegex)){
+    }  else  if(!inputs.email.match(validRegex)){
  
       // setShow(true);
       setResponse("Enter Valid Email");
@@ -82,12 +81,12 @@ function Footer() {
       //   setShow(false);
       // }, 3000);
     }
+    setResponse("Thank you")
   };
   return (
     <div className={styles.footer} id="contact">
           <div className={styles.containor}>
-               <h2 className={styles.h2}>Don’t be a stranger!</h2>
-            {!show &&  <> <p className={styles.p}>Available for select freelance opportunities<br></br>
+      {response !== "" ?<h2 className={styles.h2}>{response}</h2> :                  !show &&  <><h2 className={styles.h2}>Don’t be a stranger!</h2> <p className={styles.p}>Available for select freelance opportunities<br></br>
 Have an exciting project you need help with? Send me an email or<br></br> contact me via instant message!
 </p>
    <div className={styles.out}  onClick={()=>{setShow(true)}}>
